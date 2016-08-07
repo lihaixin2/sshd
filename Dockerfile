@@ -22,7 +22,7 @@ RUN  mkdir /var/run/sshd && \
         sed -i 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' /etc/pam.d/sshd
 
 #other use pag
-RUN apt-get install -y --no-install-recommends gettext-base wget curl  iputils-ping iproute2 mtr net-tools supervisor
+RUN apt-get install -y --no-install-recommends gettext-base wget curl  iputils-ping iproute2 mtr net-tools vim apt-utils supervisor
 
 # config timezone
 
